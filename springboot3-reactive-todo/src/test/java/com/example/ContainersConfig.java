@@ -11,7 +11,7 @@ public class ContainersConfig {
 	@Bean
 	@ServiceConnection
 	public PostgreSQLContainer<?> postgres() {
-		return new PostgreSQLContainer<>("postgres:14")
+		return new PostgreSQLContainer<>("postgres:17")
 			.withInitScript("schema.sql");
 	}
 }

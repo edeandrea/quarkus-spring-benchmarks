@@ -1,0 +1,16 @@
+version: 2
+updates:
+  - package-ecosystem: maven
+    directory: /
+    schedule:
+      interval: daily
+    ignore:
+      - dependency-name: "io.quarkus.platform:*"
+        versions: ["2.x"]
+      - dependency-name: "org.springframework.boot:*"
+        versions: ["2.x"]
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily

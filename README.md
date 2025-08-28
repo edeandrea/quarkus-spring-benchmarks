@@ -1,1 +1,1 @@
-# idc-quarkus-labs
+# quarkus-spring-benchmarks
